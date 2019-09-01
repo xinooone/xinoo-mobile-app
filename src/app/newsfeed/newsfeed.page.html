@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>News</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ul>
+        <li *ngFor="let event of event$ | async">
+          {{ event.eventTitle }}
+        </li>
+      </ul>
+</ion-content>
